@@ -1,20 +1,7 @@
 package devices;
 
-public class Scanner extends Device{
-
-	public Scanner(String serialnumber) {
-		super(serialnumber);
-	}
+public interface Scanner {
 	
-	@Override
-	public void processDoc(String doc) {
-		System.out.println("Scanner processing: " + doc);
-	}
-	
-	public String scan() {
-		return "Scanned content";
-	}
-	
-	
+	String scan();
 
 }

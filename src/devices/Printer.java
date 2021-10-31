@@ -1,17 +1,7 @@
 package devices;
 
-public class Printer extends Device{
-
-	public Printer(String serialnumber) {
-		super(serialnumber);
-	}
+public interface Printer {
 	
-	@Override
-	public void processDoc(String doc) {
-		System.out.println("Printer processing: " + doc);
-	}
+	void print(String doc);
 
-	public void print(String doc) {
-		System.out.println("Printing: " + doc);
-	}
 }
